@@ -459,7 +459,7 @@
   - type: Item
     heldPrefix: blue
   - type: IdCard
-    jobTitle: Central Commander
+    jobTitle: Офицер ЦентКома
     jobIcon: JobIconNanotrasen
   - type: Access
     groups:
@@ -477,7 +477,7 @@
     - state: gold
     - state: ert_commander
   - type: IdCard
-    jobTitle: ERT Company Commander
+    jobTitle: Лидер ОБР
   - type: Item
     heldPrefix: gold
 
@@ -491,7 +491,7 @@
     - state: gold
     - state: ert_chaplain # we have the sprite for the id but dont have chaplain ERT equipment for now.
   - type: IdCard
-    jobTitle: ERT Soul Officer
+    jobTitle: Священник ОБР
   - type: Item
     heldPrefix: blue
 
@@ -505,7 +505,7 @@
     - state: gold
     - state: ert_engineer
   - type: IdCard
-    jobTitle: ERT Field Engineer
+    jobTitle: Инженер ОБР
 
 - type: entity
   parent: ERTChaplainIDCard
@@ -517,7 +517,7 @@
     - state: gold
     - state: ert_janitor
   - type: IdCard
-    jobTitle: ERT Custodian
+    jobTitle: Уборщик ОБР
 
 - type: entity
   parent: ERTChaplainIDCard
@@ -529,7 +529,7 @@
     - state: gold
     - state: ert_medic
   - type: IdCard
-    jobTitle: ERT Medical Doctor
+    jobTitle: Медик ОБР
 
 - type: entity
   parent: ERTChaplainIDCard
@@ -541,7 +541,25 @@
     - state: gold
     - state: ert_security
   - type: IdCard
-    jobTitle: ERT Field Officer
+    jobTitle: Офицер ОБР
+
+- type: entity
+  parent: IDCardStandard
+  id: CentcomIDCardSyndie
+  name: command officer ID card
+  suffix: Fake
+  components:
+  - type: Sprite
+    layers:
+    - state: centcom
+    - state: idcentcom
+  - type: Item
+    heldPrefix: blue
+  - type: IdCard
+    jobTitle: Офицер ЦентКома
+  - type: Access
+    tags:
+    - Maintenance
 
 - type: entity
   parent: IDCardStandard
@@ -566,7 +584,7 @@
   - type: Item
     heldPrefix: blue
   - type: IdCard
-    jobTitle: Centcomm Agent
+    jobTitle: Агент ЦентКома
 
 - type: entity
   name: passenger ID card
@@ -723,7 +741,7 @@
   - type: Item
     heldPrefix: blue
   - type: IdCard
-    jobTitle: Centcomm Quarantine Officer
+    jobTitle: Офицер РХБЗЗ
 
 - type: entity
   parent: IDCardStandard

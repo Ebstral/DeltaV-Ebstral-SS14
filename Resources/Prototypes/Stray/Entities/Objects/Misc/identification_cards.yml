@@ -1,0 +1,85 @@
+- type: entity
+  parent: CentcomIDCard
+  id: CentcomIDCardOSO
+  name: ID карта ОСО
+  components:
+  - type: Sprite
+    layers:
+    - state: centcom
+  - type: Item
+    heldPrefix: blue
+  - type: IdCard
+    jobTitle: Офицер спецопераций
+
+- type: entity
+  parent: CentcomIDCard
+  id: CentcomIDCardOCC
+  name: ID карта оператора ЦентКома
+  components:
+  - type: Sprite
+    layers:
+    - state: centcom
+  - type: Item
+    heldPrefix: blue
+  - type: IdCard
+    jobTitle: оператор ЦентКома
+  - type: Access
+    groups:
+    - AllAccess
+    tags:
+    - CentralCommand
+    - CentralCommandOperator
+
+- type: entity
+  parent: CentcomIDCard
+  id: CentcomIDCardOffCC
+  name: ID карта представителя ЦентКома
+  components:
+  - type: Sprite
+    layers:
+    - state: centcom
+  - type: Item
+    heldPrefix: blue
+  - type: IdCard
+    jobTitle: представитель ЦентКома
+  - type: Access
+    groups:
+    - AllAccess
+    tags:
+    - CentralCommand
+    - CentralCommandOfficial
+
+- type: entity
+  parent: CentcomIDCard
+  id: CentcomIDCardCHCC
+  name: ID карта начальника штаба ЦентКома
+  components:
+  - type: Sprite
+    layers:
+    - state: centcom
+  - type: Item
+    heldPrefix: blue
+  - type: IdCard
+    jobTitle: Начальник штаба ЦентКома
+  - type: Access
+    groups:
+    - AllAccess
+    tags:
+      - CentralCommand
+      - CentralCommandOperator
+      - CentralCommandOfficial
+      - ChiefHeadquartersCentralCommand
+
+- type: entity
+  parent: IDCardStandard
+  id: BlueShieldIDCard
+  name: blue shield ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: centcom
+    - state: idcentcom
+  - type: Item
+    heldPrefix: blue
+  - type: PresetIdCard
+    job: Blueshield

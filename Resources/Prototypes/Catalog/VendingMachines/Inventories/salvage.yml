@@ -6,10 +6,12 @@
     OreBag: 4 # DeltaV - more ore bags, was 2
     Flare: 4
     FlashlightLantern: 2
-    Floodlight: 2 # DeltaV - upstream removed them
-    HandheldGPSBasic: 2
-    RadioHandheld: 2
+    Floodlight: 2
+    HandheldGPSBasic: 4
+    RadioHandheld: 4
     WeaponProtoKineticAccelerator: 4
-    SeismicCharge: 2 # DeltaV - upstream removed
-    FultonBeacon: 1 # DeltaV - upstream removed
-    Fulton: 2 # DeltaV - upstream removed
+    SeismicCharge: 4
+    FultonBeacon: 1
+    Fulton: 2
+    ClothingBeltSalvageWebbing: 4
+    LittleOreBag: 4

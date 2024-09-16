@@ -8,6 +8,7 @@
   - Quartermaster
   - SalvageSpecialist
   - Courier # DeltaV - Courier, see Resources/Prototypes/DeltaV/Roles/Jobs/Cargo/courier.yml
+  - Borgmin
 
 - type: department
   id: Civilian
@@ -44,6 +45,8 @@
   color: "#334E6D"
   roles:
   - Captain
+  - IAA
+  - Blueshield
   - CentralCommandOfficial
   - ChiefEngineer
   - ChiefMedicalOfficer
@@ -65,6 +68,7 @@
   - ChiefEngineer
   - StationEngineer
   - TechnicalAssistant
+  - Borgeng
 
 - type: department
   id: Medical
@@ -78,7 +82,8 @@
   - MedicalIntern
   - Psychologist
   - Paramedic
-  - MedicalBorg  # Delta V - Medical Borg, see Resources/Prototypes/DeltaV/Roles/Jobs/Medical/medicalborg.yml
+  - Slugcat
+  - Borgmed
 
 - type: department
   id: Security
@@ -94,7 +99,8 @@
   - Warden
   - PrisonGuard # Nyanotrasen - PrisonGuard, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Security/prisonguard.yml
   - Brigmedic # DeltaV - Brigmedic, see Resources/Prototypes/DeltaV/Roles/Jobs/Security/brigmedic.yml
-  - SecurityBorg # Delta-V : Security Borg
+  - Pilot # Corvax
+  - Borgsec
 
 - type: department
   id: Epistemics # DeltaV - Epistemics Department replacing Science
@@ -107,6 +113,7 @@
   - ResearchAssistant
   - Chaplain # DeltaV - Move Chaplain into Epistemics
   - ForensicMantis # Nyanotrasen - ForensicMantis, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Epistemics/forensicmantis.yml
+  - Roboticist
 
 - type: department
   id: Silicon
@@ -115,6 +122,9 @@
   color: "#D381C9"
   roles:
   - Borg
+  - Borgser
+  - Borgcwn
+  - Borgjan
   - StationAi
 
 - type: department
@@ -125,6 +135,7 @@
   weight: 10
   roles:
   - Boxer
+  - Borg
   - Reporter
   - Zookeeper
   - Psychologist

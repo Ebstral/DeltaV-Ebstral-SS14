@@ -128,6 +128,15 @@
       board: [ DoorElectronicsNukeop ]
 
 - type: entity
+  parent: AirlockExternal
+  id: AirlockExternalSecurityLocked
+  suffix: External, Security, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSecurity ]
+
+- type: entity
   parent: AirlockFreezer
   id: AirlockFreezerLocked
   suffix: Kitchen, Locked
@@ -457,6 +466,16 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsCargo ]
+
+- type: entity
+  parent: AirlockExternalGlass
+  id: AirlockExternalGlassSecurityLocked
+  suffix: External, Glass, Security, Locked # Stray
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSecurity ]
+
 
 - type: entity
   parent: AirlockExternalGlass

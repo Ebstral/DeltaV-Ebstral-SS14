@@ -302,6 +302,7 @@
       - AnomalyScanner
       - AnomalyLocator
       - AnomalyLocatorWide
+      - HandheldCrewMonitor # DeltaV
       - Scalpel
       - Retractor
       - Cautery
@@ -352,21 +353,24 @@
       - ClothingBackpackDuffelHolding
       - WelderExperimental
       - JawsOfLife
+      - CoreSilver # Nyanotrasen - Silver Golem core
       - FauxTileAstroGrass
       - FauxTileMowedAstroGrass
       - FauxTileJungleAstroGrass
       - FauxTileAstroIce
       - FauxTileAstroSnow
       - OreBagOfHolding
+      - PlantBagOfHolding #DeltaV
       - DeviceQuantumSpinInverter
-      # Begin DeltaV additions
-      - CoreSilver # Nyanotrasen - Silver Golem core
-      - HandheldCrewMonitor
-      - PlantBagOfHolding
-      - RCDAmmo
-      - Fulton
-      - FultonBeacon
-      # End DeltaV additions
+      - RCDAmmo # DeltaV
+    # Begin Stray additions
+      - WeaponProtoKineticAcceleratorMining
+      - WeaponProtoKineticAcceleratorAdvancedMining
+      - WeaponProtoKineticAcceleratorSubversiveMining
+      - RCD
+      - RACD
+      - AdavancedRCD
+    # End Stray additions
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - BoxBeanbag
@@ -535,6 +539,9 @@
       - PortableGeneratorPacmanMachineCircuitboard
       - PortableGeneratorSuperPacmanMachineCircuitboard
       - PortableGeneratorJrPacmanMachineCircuitboard
+      - PortableCoalGeneratorMachineCircuitboard
+      - WallmountGeneratorElectronics
+      - WallmountGeneratorAPUElectronics
       - WallmountSubstationElectronics
       - PowerCageRechargerCircuitboard
       - EmitterCircuitboard
@@ -621,6 +628,15 @@
     - BorgModuleTool
     - BorgModuleAppraisal
     - BorgModuleConstruction
+    # DeltaV Start
+    - BorgModuleSecurityHold
+    - LeftArmBorgSecurity
+    - RightArmBorgSecurity
+    - LeftLegBorgSecurity
+    - RightLegBorgSecurity
+    - HeadBorgSecurity
+    - TorsoBorgSecurity
+    # DeltaV end
     - BorgModuleService
     - BorgModuleTreatment
     - BorgModuleCleaning
@@ -660,9 +676,6 @@
     - HeadBorgService
     - TorsoBorgService
     # Delta-V : Start
-    - BorgModuleSecurityPeacekeeper
-    - BorgModuleSecurityPatrol
-    - BorgModuleSecurityBastion
     - LeftArmBorgSecurity
     - RightArmBorgSecurity
     - LeftLegBorgSecurity
@@ -714,9 +727,9 @@
     - JetpackMini
   # End Nyano additions
   # DeltaV Start
-    - BorgModuleSecurityDeescalate
+    - BorgModuleSecurityDetain
+    - BorgModuleSecurityControl
     - BorgModuleSecurityChase
-    - BorgModuleSecurityEscalate
     - JetpackVoid
   # DeltaV End
   - type: MaterialStorage

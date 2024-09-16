@@ -157,7 +157,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Launchers/china_lake.rsi, state: icon }
   productEntity: ClothingBackpackDuffelSyndicateFilledGrenadeLauncher
   cost:
-    Telecrystal: 25
+    Telecrystal: 40 # Stray - Was 25
   categories:
   - UplinkWeaponry
 
@@ -168,7 +168,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/LMGs/l6.rsi, state: icon }
   productEntity: ClothingBackpackDuffelSyndicateFilledLMG
   cost:
-    Telecrystal: 30
+    Telecrystal: 35 # Stray - Was 30
   categories:
   - UplinkWeaponry
 

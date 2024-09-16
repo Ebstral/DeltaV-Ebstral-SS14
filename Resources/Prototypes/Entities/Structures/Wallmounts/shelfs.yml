@@ -323,6 +323,12 @@
     - 0,0,5,1
     - 0,3,5,4
     maxItemSize: Normal
+    whitelist:
+      tags:
+        - DrinkGlass
+        - DrinkBottle
+        - DrinkCan
+        - Beer
   - type: Construction
     graph: Shelf
     node: ShelfBar
@@ -371,6 +377,24 @@
     - 0,0,5,1
     - 0,3,5,4
     maxItemSize: Normal
+    whitelist:
+      tags:
+        - DrinkBottle
+        - DrinkCan
+        - DrinkCup
+        - DrinkGlass
+        - BoxCardboard
+        - MonkeyCube
+        - Enzyme
+        - Mayo
+        - Packet
+        - Cleaver
+        - Knife
+        - KitchenKnife
+        - RollingPin
+        - Ingredient
+        - Trash
+        - Plastic
   - type: Construction
     graph: Shelf
     node: ShelfKitchen
@@ -425,6 +449,11 @@
     - 0,0,5,1
     - 0,3,5,4
     maxItemSize: Normal
+    whitelist:
+      tags:
+        - ChemDispensable
+        - GlassBeaker
+        - Bottle
   - type: Construction
     graph: Shelf
     node: ShelfChemistry

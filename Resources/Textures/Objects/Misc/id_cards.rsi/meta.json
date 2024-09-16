@@ -104,6 +104,9 @@
       "name": "idlawyer"
     },
     {
+      "name": "idiaa"
+    },
+    {
       "name": "idmedicaldoctor"
     },
     {
@@ -219,6 +222,9 @@
     },
     {
       "name": "idseniorphysician"
+    },
+    {
+       "name": "idpilot"
     },
     {
       "name": "idseniorofficer"

@@ -14,15 +14,15 @@
   - CigPackBlack
   - CigarCase
   - CigarGold
-  - ClothingNeckLGBTPin
-  - ClothingNeckAromanticPin
-  - ClothingNeckAsexualPin
-  - ClothingNeckBisexualPin
-  - ClothingNeckIntersexPin
-  - ClothingNeckLesbianPin
-  - ClothingNeckNonBinaryPin
-  - ClothingNeckPansexualPin
-  - ClothingNeckTransPin
+#  - ClothingNeckLGBTPin
+#  - ClothingNeckAromanticPin
+#  - ClothingNeckAsexualPin
+#  - ClothingNeckBisexualPin
+#  - ClothingNeckIntersexPin
+#  - ClothingNeckLesbianPin
+#  - ClothingNeckNonBinaryPin
+#  - ClothingNeckPansexualPin
+#  - ClothingNeckTransPin
   - ClothingNeckAutismPin
   - ClothingNeckGoldAutismPin
   - AACTablet # DeltaV
@@ -46,6 +46,8 @@
   hidden: true
   loadouts:
   - LoadoutTankHarness
+  - LoadoutEnvirosuit
+
 
 - type: loadoutGroup
   id: Survival
@@ -56,6 +58,9 @@
   - EmergencyNitrogen
   - EmergencyOxygen
   - LoadoutSpeciesVoxNitrogen
+  - LoadoutSpeciesEVAPlasma
+  - EmergencyPlasma
+  - EmergencyNoGas
 
 - type: loadoutGroup
   id: GroupEVATank
@@ -64,6 +69,7 @@
   loadouts:
   - LoadoutSpeciesEVANitrogen
   - LoadoutSpeciesEVAOxygen
+  - LoadoutSpeciesEVAPlasma
 
 # Command
 - type: loadoutGroup
@@ -115,6 +121,7 @@
   loadouts:
   - CaptainOuterClothing
   - CaptainWintercoat
+  - ClothingOuterCoatCaptain # Stray
 
 - type: loadoutGroup # DeltaV
   id: CaptainShoes
@@ -195,6 +202,10 @@
   loadouts:
   - GreyJumpsuit
   - GreyJumpskirt
+  - WhiteJumpsuit
+  - WhiteJumpskirt
+  - BlackJumpsuit
+  - BlackJumpskirt
   - MioSkirt # Start DeltaV Changes
   - NaotaHoodie
   - CasualBlueSkirt
@@ -219,6 +230,8 @@
   minLimit: 0
   loadouts:
   - PassengerGloves
+  - PassengerGlovesWhite
+  - PassengerGlovesBlack
 
 - type: loadoutGroup
   id: CommonBackpack
@@ -241,13 +254,22 @@
   minLimit: 0
   loadouts:
   - PassengerWintercoat
+  - PassengerWintercoatLong # Stray addition
 
 - type: loadoutGroup
   id: PassengerShoes
   name: loadout-group-passenger-shoes
   loadouts:
   - BlackShoes
+  - WhiteShoes
   - WinterBoots
+
+- type: loadoutGroup
+  id: PassengerHead
+  name: loadout-group-passenger-head
+  minLimit: 0
+  loadouts:
+  - PassengerHead
 
 - type: loadoutGroup
   id: BartenderHead
@@ -540,6 +562,9 @@
   - EmergencyNitrogenClown
   - EmergencyOxygenClown
   - LoadoutSpeciesVoxNitrogen
+  - LoadoutSpeciesEVAPlasma
+  - EmergencyPlasmaClown
+  - EmergencyNoGasClown
 
 - type: loadoutGroup
   id: MimeHead
@@ -613,6 +638,9 @@
   - EmergencyNitrogenMime
   - EmergencyOxygenMime
   - LoadoutSpeciesVoxNitrogen
+  - LoadoutSpeciesEVAPlasma
+  - EmergencyPlasmaMime
+  - EmergencyNoGasMime
 
 - type: loadoutGroup
   id: MusicianJumpsuit
@@ -725,6 +753,7 @@
   id: CargoTechnicianJumpsuit
   name: loadout-group-cargo-technician-jumpsuit
   loadouts:
+  - CargoLong
   - CargoTechnicianJumpsuit
   - CargoTechnicianJumpskirt
 
@@ -757,6 +786,7 @@
   loadouts:
   - SalvageCloak
   - ScarfBrown
+  - SalvageLittleOreBag
 
 - type: loadoutGroup
   id: SalvageSpecialistBackpack
@@ -936,6 +966,9 @@
   - EmergencyNitrogenExtended
   - EmergencyOxygenExtended
   - LoadoutSpeciesVoxNitrogen
+  - LoadoutSpeciesEVAPlasma
+  - EmergencyPlasmaExtended
+  - EmergencyNoGasExtended
 
 # Science
 - type: loadoutGroup
@@ -986,8 +1019,6 @@
   name: loadout-group-scientist-head
   minLimit: 0
   loadouts:
-  - RoboticistCap
-  - SkullBandana
   - ScientificBeret
 
 - type: loadoutGroup
@@ -1004,8 +1035,6 @@
   loadouts:
   - ScientistJumpsuit
   - ScientistJumpskirt
-  - RoboticistJumpsuit
-  - RoboticistJumpskirt
   - SeniorResearcherJumpsuit
   - SeniorResearcherJumpskirt
 
@@ -1035,7 +1064,6 @@
   loadouts:
   - LatexGloves
   - PurpleGloves
-  - RobohandsGloves
 
 - type: loadoutGroup
   id: ScientistShoes
@@ -1052,7 +1080,6 @@
   - SeniorResearcherPDA
   - LabTechPDA # DeltaV
   - XenoarchPDA # DeltaV
-  - RoboticistPDA # DeltaV
 
 - type: loadoutGroup
   id: ResearchAssistantJumpsuit
@@ -1069,6 +1096,7 @@
   loadouts:
   - HeadofSecurityHead
   - HeadofSecurityBeret
+  - ClothingHeadHatCapHoS # Stray
 
 - type: loadoutGroup
   id: HeadofSecurityJumpsuit
@@ -1091,6 +1119,7 @@
   - HeadofSecurityCloak
   - HeadofSecurityMantle
   - ScarfRed # DeltaV
+  - ClothingNeckMantleHOSShoulder # Stray
 
 - type: loadoutGroup
   id: HeadofSecurityOuterClothing
@@ -1098,6 +1127,7 @@
   loadouts:
   - HeadofSecurityCoat
   - HeadofSecurityWinterCoat
+  - ClothingOuterCoatHoSGreatcoat # Stray
 
 - type: loadoutGroup # DeltaV
   id: HeadOfSecurityShoes
@@ -1115,6 +1145,7 @@
   loadouts:
   - WardenHead
   - WardenBeret
+  - ClothingHeadHatCapWardenAlt
 
 - type: loadoutGroup
   id: WardenJumpsuit
@@ -1129,6 +1160,7 @@
   loadouts:
   - WardenCoat
   - WardenArmoredWinterCoat
+  - ClothingOuterCoatWardenAlt
 
 - type: loadoutGroup
   id: SecurityHead
@@ -1152,6 +1184,7 @@
   - SecurityJumpskirtBlue # DeltaV
   - SeniorOfficerJumpsuit
   - SeniorOfficerJumpskirt
+  - ClothingUniformJumpsuitSecFormal # Stray
 
 - type: loadoutGroup
   id: SecurityBackpack
@@ -1177,6 +1210,7 @@
   - DuraVest # DeltaV
   - ArmorVestSlim
   - SecurityOfficerWintercoat
+  - ClothingOuterCoatSecurityOvercoat # Stray
 
 - type: loadoutGroup
   id: SecurityShoes
@@ -1231,6 +1265,9 @@
   loadouts:
   - DetectiveArmorVest
   - DetectiveCoat
+  - PlateCarrier # DeltaV
+  - DuraVest # DeltaV
+  - CoatDetectiveDark # Stray
 
 - type: loadoutGroup
   id: SecurityCadetJumpsuit
@@ -1248,6 +1285,9 @@
   - EmergencyNitrogenSecurity
   - EmergencyOxygenSecurity
   - LoadoutSpeciesVoxNitrogen
+  - LoadoutSpeciesEVAPlasma
+  - EmergencyPlasmaSecurity
+  - EmergencyNoGasSecurity
 
 - type: loadoutGroup
   id: SecurityStar
@@ -1482,6 +1522,9 @@
   - EmergencyNitrogenMedical
   - EmergencyOxygenMedical
   - LoadoutSpeciesVoxNitrogen
+  - LoadoutSpeciesEVAPlasma
+  - EmergencyPlasmaMedical
+  - EmergencyNoGasMedical
 
 # Wildcards
 - type: loadoutGroup
@@ -1524,6 +1567,9 @@
   - EmergencyNitrogenSyndicate
   - EmergencyOxygenSyndicate
   - LoadoutSpeciesVoxNitrogen
+  - LoadoutSpeciesEVAPlasma
+  - EmergencyPlasmaSyndicate
+  - EmergencyNoGasSyndicate
 
 - type: loadoutGroup
   id: GroupSpeciesBreathTool
@@ -1533,6 +1579,7 @@
   hidden: true
   loadouts:
   - LoadoutSpeciesBreathTool
+  - LoadoutSpeciesBreathToolPlasma
 
 - type: loadoutGroup
   id: GroupSpeciesBreathToolMedical
@@ -1542,6 +1589,7 @@
   hidden: true
   loadouts:
   - LoadoutSpeciesBreathToolMedical
+  - LoadoutSpeciesBreathToolMedicalPlasma
 
 - type: loadoutGroup
   id: GroupSpeciesBreathToolSecurity
@@ -1551,3 +1599,4 @@
   hidden: true
   loadouts:
   - LoadoutSpeciesBreathToolSecurity
+  - LoadoutSpeciesBreathToolSecurityPlasma

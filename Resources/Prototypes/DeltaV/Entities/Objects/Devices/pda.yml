@@ -5,7 +5,7 @@
   description: Red and Sterile. Has a built-in health analyzer.
   components:
   - type: Sprite
-    sprite: DeltaV/Objects/Devices/pda.rsi # - aPDA Sprite Rework
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi # - aPDA Sprite Rework
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ]
     - state: "light_overlay"
@@ -31,7 +31,7 @@
     borderColor: "#A32D26"
     accentVColor: "#447987"
   - type: Icon
-    sprite: DeltaV/Objects/Devices/pda.rsi
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
     state: pda-corpsman
   - type: HealthAnalyzer
     scanDelay: 1
@@ -45,7 +45,7 @@
   description: Whosoever bears this PDA is the law.
   components:
   - type: Sprite
-    sprite: DeltaV/Objects/Devices/pda.rsi
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ]
     - state: "light_overlay"
@@ -68,7 +68,7 @@
   - type: PdaBorderColor
     borderColor: "#470823"
   - type: Icon
-    sprite: DeltaV/Objects/Devices/pda.rsi
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
     state: pda-chiefjustice
   - type: CartridgeLoader
     preinstalled:
@@ -84,7 +84,7 @@
   description: It has the stamp to prove it's been officially notarized!
   components:
   - type: Sprite
-    sprite: DeltaV/Objects/Devices/pda.rsi
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ]
     - state: "light_overlay"
@@ -107,7 +107,7 @@
   - type: PdaBorderColor
     borderColor: "#611528"
   - type: Icon
-    sprite: DeltaV/Objects/Devices/pda.rsi
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
     state: pda-clerk
   - type: CartridgeLoader
     preinstalled:
@@ -115,7 +115,7 @@
       - NotekeeperCartridge
       - NewsReaderCartridge
       - CrimeAssistCartridge
-      
+
 - type: entity
   parent: BasePDA
   id: ProsecutorPDA
@@ -123,7 +123,7 @@
   description: Sharp. Looks like it could prosecute you all on its own.
   components:
   - type: Sprite
-    sprite: DeltaV/Objects/Devices/pda.rsi
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ]
     - state: "light_overlay"
@@ -146,7 +146,7 @@
   - type: PdaBorderColor
     borderColor: "#6f6192"
   - type: Icon
-    sprite: DeltaV/Objects/Devices/pda.rsi
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
     state: pda-prosecutor
   - type: CartridgeLoader # DeltaV - Crime Assist
     preinstalled:
@@ -175,7 +175,7 @@
   description: Smells like unopened letters.
   components:
   - type: Sprite
-    sprite: DeltaV/Objects/Devices/pda.rsi
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ]
     - state: "light_overlay"
@@ -193,7 +193,7 @@
     borderColor: "#e39751"
     accentVColor: "#050c4d"
   - type: Icon
-    sprite: DeltaV/Objects/Devices/pda.rsi
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
     state: pda-mailcarrier
   - type: CartridgeLoader # DeltaV - Courier Performance
     preinstalled:
@@ -212,6 +212,18 @@
   name: visitor PDA
   description: If you hold onto this, it can be a fun souvenier when you get to... wherever you're going!
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: VisitorIDCard
     state: pda-visitor # - aPDA Sprite Rework
@@ -222,6 +234,18 @@
   name: tourist PDA
   description: You came to the station for a relaxing vacation. Bon voyage!
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: TouristIDCard
     state: pda-tourist # - aPDA Sprite Rework
@@ -232,6 +256,18 @@
   name: off-duty crew PDA
   description: You saved your PTO to come here with zero responsibility. Surely they won't need your help while you're here?
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: OffDutyCrewIDCard
     state: pda-offduty # - aPDA Sprite Rework
@@ -242,6 +278,18 @@
   name: student PDA
   description: Whether you came here to study various aspects of space architecture, unfathomably hot burn chambers, psionic activity, or are just on spring break, you're a real space student now.
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: StudentIDCard
     state: pda-student # - aPDA Sprite Rework
@@ -254,6 +302,18 @@
   name: mixologist PDA
   description: There are those who tend the bar, and then there are those who synthesize intoxicating art.
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: MixologistIDCard
     state: pda-mixologist # - aPDA Sprite Rework
@@ -266,6 +326,18 @@
   name: baker PDA
   description: For those about to loaf, we salute you.
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: BakerIDCard
     state: pda-baker # - aPDA Sprite Rework
@@ -276,6 +348,18 @@
   name: butcher PDA
   description: It's as fearsome of a job title as you want it to be.
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: ButcherIDCard
     state: pda-butcher # - aPDA Sprite Rework
@@ -286,6 +370,18 @@
   name: pizzaiolo PDA
   description: Hey paesanos! It's a-time to cook-a-da-pizza!
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: PizzaioloIDCard
     state: pda-pizzaiolo # - aPDA Sprite Rework
@@ -298,6 +394,18 @@
   name: practical nurse PDA
   description: For those who practically nurse people to good health.
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: PracticalNurseIDCard
     state: pda-practicingnurse # - aPDA Sprite Rework
@@ -308,6 +416,18 @@
   name: resident PDA
   description: No, it's for training your way up the medical ladder. Not evil.
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: ResidentIDCard
     state: pda-resident # - aPDA Sprite Rework
@@ -320,6 +440,18 @@
   name: clinician PDA
   description: Why do you have to be so clinical about everything!?
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: ClinicianIDCard
     state: pda-phys # - aPDA Sprite Rework
@@ -331,6 +463,18 @@
   id: LifeSupportTechPDA
   name: life support technician PDA
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: LifeSupportTechIDCard
     state: pda-lifesupporttech # - aPDA Sprite Rework
@@ -340,6 +484,18 @@
   id: PlasmaScientistPDA
   name: plasma scientist PDA
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: PlasmaScientistIDCard
     state: pda-plasmatech # - aPDA Sprite Rework
@@ -352,6 +508,18 @@
   name: electrician PDA
   description: Where do they get the batteries for these things?
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: ElectricianIDCard
     state: pda-electrician # - aPDA Sprite Rework
@@ -362,6 +530,18 @@
   name: mechanic PDA
   description: We love wrenches!
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: MechanicIDCard
     state: pda-mechanic # - aPDA Sprite Rework
@@ -374,6 +554,18 @@
   name: deck worker PDA
   description: Ideally you're not just swabbing it.
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: DeckWorkerIDCard
     state: pda-deckworker # - aPDA Sprite Rework
@@ -383,6 +575,18 @@
   id: InventoryAssociatePDA
   name: inventory associate PDA
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: InventoryAssociateIDCard
     state: pda-inventoryassociate # - aPDA Sprite Rework
@@ -394,6 +598,18 @@
   id: ProspectorPDA
   name: prospector PDA
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: ProspectorIDCard
     state: pda-prospector # - aPDA Sprite Rework
@@ -403,6 +619,18 @@
   id: ExcavatorPDA
   name: excavator PDA
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: ExcavatorIDCard
     state: pda-excavator # - aPDA Sprite Rework
@@ -415,6 +643,18 @@
   name: lab technician PDA
   description: Part of it is melted after a close interaction with a hotplate.
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: LabTechIDCard
     state: pda-labsci # - aPDA Sprite Rework
@@ -424,6 +664,18 @@
   id: XenoarchPDA
   name: xenoarchaeologist PDA
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: XenoarchIDCard
     state: pda-xenobio # - aPDA Sprite Rework
@@ -446,6 +698,18 @@
   name: jester PDA
   description: Doesn't actually jingle when you move.
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: JesterIDCard
     state: pda-jester # - aPDA Sprite Rework
@@ -456,6 +720,18 @@
   name: fool PDA
   description: Found alone on a hill.
   components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pdaOld.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Pda
     id: FoolIDCard
     state: pda-fool # - aPDA Sprite Rework

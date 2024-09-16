@@ -4,6 +4,14 @@
   name: admin observer
   categories: [ HideSpawnMenu ]
   components:
+  - type: Sprite
+    overrideContainerOcclusion: true # Ghosts always show up regardless of where they're contained.
+    drawdepth: Ghosts
+    sprite: SimpleStation14/Mobs/Ghosts/ghost_admin.rsi
+    color: "#888888"
+    layers:
+    - state: "1"
+      shader: unshaded
   - type: Eye
     visMask:
       - TelegnosticProjection
@@ -30,6 +38,9 @@
   - type: Physics
     ignorePaused: true
     bodyType: Kinematic
+  - type: CustomGhosts
+    maxRandomIndex: 2
+    ckeys: Kotovasu&kvasik&endr_animet
   - type: Body
     prototype: Aghost
   - type: Access
@@ -96,6 +107,14 @@
     templateId: aghost
   - type: Loadout
     prototypes: [ MobAghostGear ]
+  #- type: RandomSprite
+  #  available:
+  #    - 0:
+  #        aghost1: ""
+  #        aghost3: ""
+  #        aghost4: ""
+  #        aghost5: ""
+  #        aghost6: ""
   - type: BypassInteractionChecks
 
 - type: entity
@@ -104,8 +123,8 @@
   description: View a solar control interface.
   components:
   - type: InstantAction
-    icon: { sprite: Structures/Machines/parts.rsi, state: box_0 }
-    iconOn: Structures/Machines/parts.rsi/box_2.png
+    icon: Corvax/Interface/AdminActions/solar.png # Corvax-Resprite
+    iconOn: Corvax/Interface/AdminActions/solar.png # Corvax-Resprite
     keywords: [ "AI", "console", "interface" ]
     priority: -10
     event: !type:ToggleIntrinsicUIEvent { key: enum.SolarControlConsoleUiKey.Key }
@@ -116,8 +135,8 @@
   description: View a communications interface.
   components:
   - type: InstantAction
-    icon: { sprite: Structures/Machines/parts.rsi, state: box_0 }
-    iconOn: Structures/Machines/parts.rsi/box_2.png
+    icon: Corvax/Interface/AdminActions/communications.png # Corvax-Resprite
+    iconOn: Corvax/Interface/AdminActions/communications.png # Corvax-Resprite
     keywords: [ "AI", "console", "interface" ]
     priority: -10
     event: !type:ToggleIntrinsicUIEvent { key: enum.CommunicationsConsoleUiKey.Key }
@@ -128,8 +147,8 @@
   description: View a mass scanner interface.
   components:
   - type: InstantAction
-    icon: { sprite: Structures/Machines/parts.rsi, state: box_0 }
-    iconOn: Structures/Machines/parts.rsi/box_2.png
+    icon: Corvax/Interface/AdminActions/radar.png # Corvax-Resprite
+    iconOn: Corvax/Interface/AdminActions/radar.png # Corvax-Resprite
     keywords: [ "AI", "console", "interface" ]
     priority: -10
     event: !type:ToggleIntrinsicUIEvent { key: enum.RadarConsoleUiKey.Key }
@@ -140,8 +159,8 @@
   description: View a cargo ordering interface.
   components:
   - type: InstantAction
-    icon: { sprite: Structures/Machines/parts.rsi, state: box_0 }
-    iconOn: Structures/Machines/parts.rsi/box_2.png
+    icon: Corvax/Interface/AdminActions/cargo.png # Corvax-Resprite
+    iconOn: Corvax/Interface/AdminActions/cargo.png # Corvax-Resprite
     keywords: [ "AI", "console", "interface" ]
     priority: -10
     event: !type:ToggleIntrinsicUIEvent { key: enum.CargoConsoleUiKey.Orders }
@@ -152,8 +171,8 @@
   description: View a crew monitoring interface.
   components:
   - type: InstantAction
-    icon: { sprite: Structures/Machines/parts.rsi, state: box_0 }
-    iconOn: Structures/Machines/parts.rsi/box_2.png
+    icon: Corvax/Interface/AdminActions/monitoring.png # Corvax-Resprite
+    iconOn: Corvax/Interface/AdminActions/monitoring.png # Corvax-Resprite
     keywords: [ "AI", "console", "interface" ]
     priority: -10
     event: !type:ToggleIntrinsicUIEvent { key: enum.CrewMonitoringUIKey.Key }
@@ -164,8 +183,8 @@
   description: View a station records Interface.
   components:
   - type: InstantAction
-    icon: { sprite: Structures/Machines/parts.rsi, state: box_0 }
-    iconOn: Structures/Machines/parts.rsi/box_2.png
+    icon: Corvax/Interface/AdminActions/records.png # Corvax-Resprite
+    iconOn: Corvax/Interface/AdminActions/records.png # Corvax-Resprite
     keywords: [ "AI", "console", "interface" ]
     priority: -10
     event: !type:ToggleIntrinsicUIEvent { key: enum.GeneralStationRecordConsoleKey.Key }

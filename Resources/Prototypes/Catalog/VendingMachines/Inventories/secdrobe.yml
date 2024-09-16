@@ -29,6 +29,7 @@
     # Begin DeltaV additions
     ClothingShoesBootsCowboyBlack: 1
     ClothingHeadHatCowboyBlack: 1
+    ClothingUnderSocksStripedSecurity: 2
     # End DeltaV additions
   contrabandInventory:
     ClothingMaskClownSecurity: 1

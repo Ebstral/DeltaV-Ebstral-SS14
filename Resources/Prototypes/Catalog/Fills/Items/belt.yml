@@ -40,6 +40,10 @@
       - id: HolofanProjector
       - id: GasAnalyzer
       - id: trayScanner
+      - id: CombatRCD
+      - id: CableHVStack
+      - id: CableMVStack
+      - id: CableApcStack
 
 - type: entityTable
   id: BeltSecurityEntityTable

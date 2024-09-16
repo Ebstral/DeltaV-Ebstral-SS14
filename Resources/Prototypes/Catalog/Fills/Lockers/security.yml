@@ -27,6 +27,8 @@
       - id: BoxEncryptionKeyPrisoner
       - id: LunchboxSecurityFilledRandom
         prob: 0.3
+      - id: ClothingUnderSocksStripedSecurityJackboots
+        prob: 0.5
       # End DeltaV additions
       - id: ClothingNeckShockCollar
         amount: 2
@@ -61,6 +63,8 @@
       - id: BoxEncryptionKeyPrisoner
       - id: LunchboxSecurityFilledRandom
         prob: 0.3
+      - id: ClothingUnderSocksStripedSecurityJackboots
+        prob: 0.5
       # End DeltaV additions
       - id: ClothingNeckShockCollar
         amount: 2

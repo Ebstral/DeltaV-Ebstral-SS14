@@ -51,20 +51,20 @@
     Snout:
       points: 1
       required: false
-    Tail: # the cat tail joke
-      points: 0
+    Tail: # the cat tail was joke
+      points: 1
       required: false
-    HeadTop:
+    HeadTop: # the cat ear was joke
       points: 1
       required: false
     Chest:
       points: 1
       required: false
     Legs:
-      points: 2
+      points: 4
       required: false
     Arms:
-      points: 2
+      points: 4
       required: false
 
 - type: humanoidBaseSprite

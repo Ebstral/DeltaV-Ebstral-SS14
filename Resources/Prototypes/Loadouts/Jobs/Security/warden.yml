@@ -5,6 +5,11 @@
     head: ClothingHeadHatWarden
 
 - type: loadout
+  id: ClothingHeadHatCapWardenAlt
+  equipment:
+    head: ClothingHeadHatCapWardenAlt # Stray
+
+- type: loadout
   id: WardenBeret
   equipment:
     head: ClothingHeadHatBeretWarden
@@ -30,3 +35,8 @@
   id: WardenArmoredWinterCoat
   equipment:
     outerClothing: ClothingOuterWinterWarden
+
+- type: loadout
+  id: ClothingOuterCoatWardenAlt
+  equipment:
+    outerClothing: ClothingOuterCoatWardenAlt # Stray

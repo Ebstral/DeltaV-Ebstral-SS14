@@ -11,9 +11,6 @@ Delta-V is a continuation of the [Nyanotrasen](https://www.nyanotrasen.moe/) for
 
 ## Ссылки
 
-#### Stray station
-[Наш Discord](https://discord.gg/jJmM4pY77m)
-
 #### DeltaV
 [Website](https://delta-v.org/) | [Wiki](https://wiki.delta-v.org/view/Main_Page) | [Discord](https://go.delta-v.org/AtDxv)
 

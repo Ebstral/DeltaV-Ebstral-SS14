@@ -101,6 +101,9 @@ public sealed class AddStationAnnouncementsCommand : IConsoleCommand
                 default:
                     color = Color.Gold;
                     break;
+                //case 3:
+                    //color = Color.DarkGreen;
+                    //break;
             }
 
             chat.DispatchGlobalAnnouncement(ann, playSound: false, colorOverride: color);
@@ -124,6 +127,9 @@ public sealed class AddStationAnnouncementsCommand : IConsoleCommand
                     default:
                         color = Color.Gold;
                         break;
+                    //case 3:
+                        //color = Color.DarkGreen;
+                        //break;
                 }
             }else{
                 _adminLogger.Add(LogType.EventAnnounced, $"{shell.Player} tries to add station announcement [{args[1]}] with audio [{args[0]}] with danger [{args[2]}] via command. but something went wrong");
@@ -172,7 +178,7 @@ public sealed class AddStationAnnouncementsCommand : IConsoleCommand
         }
         if (args.Length == 3&&args[0][0] == '/')
         {
-            var options = new List<string>(){"0", "1", "2"};
+            var options = new List<string>(){"0", "1", "2", "3"};
             return CompletionResult.FromHintOptions(options, "danger");
         }
         return CompletionResult.Empty;

@@ -33,20 +33,16 @@
         - ToyAmongPequeno
         - ToyMouse
         - ToyMaxwell # Stray Toy
-        - DotsPlushie # Stray Toy
-        - PlushieLao # Stray Kotovasu Plushie
-        - StrangeToster # Stray endr_animet's toster
-        - PlushieScientist # Stray Rizzer (Scientist) Plushie
-        - PlushieGGados # Stray Gados Plushie
-        - PlushieDahhat # Stray корректировщик Plushie
-        - PlushieFull # Stray Fullmaster Plushie
-        - PlushieDuga # Stray Duga Plushie
-        - PlushieMollis # Stray Mollis Plushie
-        - PlushieBrun # Stray Brun's Plushie
         - PlushieDiona
         - PlushieMoth
         - PlushieMothRandom # Nyanotrasen Random Moth Plushies
         - PlushieArachind
+        - PlushieVasilisa # Ebstral
+        - PlushieSasha # Ebstral
+        - PlushieSamira # Ebstral
+        - PlushieKate # Ebstral
+        - PlushieYuna # Ebstral
+        - PlushieKoryo # Ebstral
       chance: 0.5
       offset: 0.2
 

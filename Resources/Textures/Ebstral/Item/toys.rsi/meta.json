@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprite by D4M9N; ilovewatermelones",
+  "size": {
+      "x": 32,
+      "y": 32
+    },
+      "states": [
+        {
+             "name": "Vasilisa"
+        },
+        {
+             "name": "Kate"
+        },
+        {
+             "name": "Samira"
+        },
+        {
+             "name": "Sasha"
+        },
+        {
+             "name": "Yuna"
+        },
+        {
+            "name": "Koryo"
+        }
+    ]
+}

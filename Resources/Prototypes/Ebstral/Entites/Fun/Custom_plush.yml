@@ -1,0 +1,59 @@
+- type: entity
+  parent: BasePlushie
+  id: PlushieVasilisa
+  name: Василиса Комиссарова
+  description: "Хороший капитан, а теперь принесите мне кофе и помяукайте."
+  components:
+  - type: Sprite
+    sprite: Ebstral/Item/toys.rsi
+    state: Vasilisa
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieSamira
+  name: Самира Зыкова
+  description: "Усталый ботаник?"
+  components:
+  - type: Sprite
+    sprite: Ebstral/Item/toys.rsi
+    state: Samira
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieSasha
+  name: Саша Гудков
+  description: "Профессионал своего дела."
+  components:
+  - type: Sprite
+    sprite: Ebstral/Item/toys.rsi
+    state: Sasha
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieKate
+  name: Катя Мирабиливна
+  description: "ГСБ, которых редко встретишь."
+  components:
+  - type: Sprite
+    sprite: Ebstral/Item/toys.rsi
+    state: Kate
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieYuna
+  name: Юна Сагитова
+  description: "Самый прекрасный Глава Персонала."
+  components:
+  - type: Sprite
+    sprite: Ebstral/Item/toys.rsi
+    state: Yuna
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieKoryo
+  name: Коре Ницце
+  description: "Просто няшный ботаник :3"
+  components:
+  - type: Sprite
+    sprite: Ebstral/Item/toys.rsi
+    state: Koryo

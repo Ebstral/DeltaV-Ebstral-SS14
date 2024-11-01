@@ -271,7 +271,7 @@ namespace Content.Server.Cloning
 
             // TODO: Ideally, components like this should be components on the mind entity so this isn't necessary.
             // Add on special job components to the mob.
-            if (_jobs.MindTryGetJob(mindEnt, out _, out var prototype))
+            if (_jobs.MindTryGetJob(mindEnt, out var prototype))
             {
                 foreach (var special in prototype.Special)
                 {
@@ -435,7 +435,7 @@ namespace Content.Server.Cloning
             var grammar = EnsureComp<GrammarComponent>(mob);
             grammar.ProperNoun = true;
             grammar.Gender = humanoid.Gender;
-            Dirty(grammar);
+            Dirty(mob, grammar);
 
             EnsureComp<PotentialPsionicComponent>(mob);
             EnsureComp<SpeechComponent>(mob);

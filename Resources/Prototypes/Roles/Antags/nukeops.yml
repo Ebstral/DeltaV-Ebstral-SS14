@@ -7,10 +7,16 @@
   guides: [ NuclearOperatives ]
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 10800 # DeltaV - 3 hours
+    time: 108000 # DeltaV - 30 hours
+  - !type:DepartmentTimeRequirement # DeltaV - engi dept time requirement
+    department: Engineering
+    time: 7200 # DeltaV - 2 hours
+  - !type:RoleTimeRequirement # DeltaV - salvage time requirement
+    role: JobSalvageSpecialist
+    time: 7200 # DeltaV - 2 hours
   - !type:DepartmentTimeRequirement # DeltaV - Security dept time requirement
     department: Security
-    time: 3600 # DeltaV - 1 hours
+    time: 36000 # DeltaV - 10 hours
 
 - type: antag
   id: NukeopsMedic
@@ -21,10 +27,10 @@
   guides: [ NuclearOperatives ]
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 10800 # DeltaV - 3 hours
-  - !type:DepartmentTimeRequirement # DeltaV - Medical dept time requirement
-    department: Medical
-    time: 3600 # DeltaV - 1 hours
+    time: 108000 # DeltaV - 30 hours
+  - !type:RoleTimeRequirement #Delta V - they should be able to make basic chems 
+    role: JobChemist
+    time: 14400 # DeltaV- 4 hours 
 
 - type: antag
   id: NukeopsCommander
@@ -35,13 +41,14 @@
   guides: [ NuclearOperatives ]
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 18000 # DeltaV - 5 hours
+    time: 216000 # DeltaV - 60 hours
   - !type:DepartmentTimeRequirement # DeltaV - Security dept time requirement
     department: Security
-    time: 7200 # DeltaV - 2 hours
+    time: 36000 # DeltaV - 10 hours, was 5
   - !type:DepartmentTimeRequirement # DeltaV - Command dept time requirement
     department: Command
-    time: 1800 # DeltaV - 0.5 hours
+    time: 36000 # DeltaV - 10 hours
+  - !type:WhitelistRequirement # DeltaV - Whitelist requirement
   # should be changed to nukie playtime when thats tracked (wyci)
 
 - type: startingGear
